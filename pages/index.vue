@@ -1,9 +1,16 @@
 <template>
-  <Tutorial/>
+<div>
+<Tutorial/>
+<Counter />
+</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
-export default Vue.extend({})
+import Counter from '@/components/Counter.vue'
+export default Vue.extend({
+  components:{
+    Counter
+  }
+})
 </script>
